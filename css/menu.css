@@ -30,7 +30,7 @@ li a img {
 	max-width: 60px;
 	border: none;
 	border-radius: 5px;
-	background: #ccc;
+	background: #CCC;
 }
 @media (min-width: 800px) {
 	li {
@@ -38,15 +38,18 @@ li a img {
 	}
 }
 @media (max-width: 480px) {
+	ul {
+		border-top: 1px solid #EEE;
+		background: #CCC;
+	}
 	li {
 		width: 20%;
-		border-radius: 0px;
 		padding: 0 2.5%;
 		margin: 0;
 	}
-	ul {
-		border-top: 1px solid black;
-		background: #ccc;
+	li a img {
+		border-radius: 0;
 	}
+	
 	
 }
