@@ -11,21 +11,42 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	font-size: 0; /*Eliminates white space between text elements displayed using inline-block*/
 }
 li {
-	width: 40px;
-	height: 40px;
+	width: 60px;
 	display: inline-block;
-	overflow: hidden;
 	cursor: pointer;
-	margin: 0;
+	margin: 2%;
 }
 li a {
 	display: block;
 }
+li a.active img {
+	background: #5E779B;
+}
 li a img {
-	border-radius: 0.2em;
-	background: #ccc;
 	width: 100%;
+	max-width: 60px;
 	border: none;
+	border-radius: 5px;
+	background: #ccc;
+}
+@media (min-width: 800px) {
+	li {
+		margin: 16px;
+	}
+}
+@media (max-width: 480px) {
+	li {
+		width: 20%;
+		border-radius: 0px;
+		padding: 0 2.5%;
+		margin: 0;
+	}
+	ul {
+		border-top: 1px solid black;
+		background: #ccc;
+	}
+	
 }
