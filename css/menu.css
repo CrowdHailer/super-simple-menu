@@ -4,6 +4,10 @@ body {
 #page-1 {
 	text-align: center;
 }
+#output {
+	overflow: auto;
+	margin: 0;
+}
 #footer {
 	width: 100%;
 	position: absolute;
