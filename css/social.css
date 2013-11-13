@@ -21,6 +21,8 @@ li {
 li a img{
 	display: block;
 	background: white;
+	border-radius: 4px;
+	border-style: none;
 }
 #facebook-link:hover img {
 	background: #3B5998;
@@ -34,10 +36,7 @@ li a img{
 #pinterest-link:hover img {
 	background: #C92228;
 }
-li a img {
-	border-radius: 4px;
-	
-}
+
 
 @media (max-width: 480px) {
 	li a img {
